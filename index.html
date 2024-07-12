@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lithuanian Hydrometeorological Service</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lithuanian Hydrometeorological Service</h1>
+    </header>
+
+    <main>
+      <section id="current-weather">
+        <h2>Current Weather</h2>
+        <div id="current-weather-data"></div>
+      </section>
+
+      <section id="forecast">
+        <h2>Weather Forecast</h2>
+        <div id="forecast-data"></div>
+      </section>
+
+      <section id="warnings">
+        <h2>Weather Warnings</h2>
+        <div id="warnings-data"></div>
+      </section>
+
+      <section id="historical-data">
+        <h2>Historical Data</h2>
+        <div id="historical-data-content"></div>
+      </section>
+
+      <section id="synoptic-map">
+        <h2>Interactive Synoptic Map</h2>
+        <div id="map" style="height: 500px"></div>
+      </section>
+
+      <section id="radar-info">
+        <h2>Radar Information</h2>
+        <div id="radar-data"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Lithuanian Hydrometeorological Service</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- API Endpoints: Replace "https://api.lhms.lt/current-weather-endpoint", "https://api.lhms.lt/forecast-endpoint", "https://api.lhms.lt/warnings-endpoint", "https://api.lhms.lt/historical-data-endpoint", "https://api.lhms.lt/synoptic-endpoint", and "https://api.lhms.lt/radar-endpoint" with the actual API endpoints provided by the LHMS or another reliable source.
+
+Map Initialization: The initMap function initializes the map using Leaflet.js, centered on Lithuania. Adjust the coordinates as necessary.
+
+Synoptic Data: The example fetches synoptic data and adds markers to the map. Customize this as needed based on the actual data format.
+
+Radar Data: Fetches radar data and displays it as an image. Adjust according to the actual data structure and requirements.
+
+By following these steps, you can add an interactive synoptic map and radar information to your web page, providing a more comprehensive and engaging user experience. -->
