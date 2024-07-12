@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lithuanian Hydrometeorological Service</title>
+    <title>Hydromet Stuff</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
       rel="stylesheet"
@@ -12,10 +12,15 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   </head>
   <body class="bg-gray-100 text-gray-800">
-    <header class="bg-blue-700 text-white p-6">
-      <h1 class="text-3xl font-bold text-center">
-        Lithuanian Hydrometeorological Service
-      </h1>
+    <header
+      class="bg-blue-700 text-white p-6 flex flex-col md:flex-row items-center justify-center md:justify-between"
+    >
+      <img
+        src="logo.png"
+        alt="Hydrometeorological Logo"
+        class="h-16 mb-4 md:mb-0"
+      />
+      <h1 class="text-3xl font-bold text-center">Hydromet stuff</h1>
     </header>
 
     <main class="container mx-auto p-6">
@@ -45,19 +50,17 @@
         <div id="historical-data-content"></div>
       </section>
 
-      <section id="synoptic-map" class="bg-white p-6 rounded-lg shadow-md mb-6">
-        <h2 class="text-2xl font-semibold mb-4">Interactive Synoptic Map</h2>
-        <div id="map" class="h-96"></div>
-      </section>
-
-      <section id="radar-info" class="bg-white p-6 rounded-lg shadow-md mb-6">
-        <h2 class="text-2xl font-semibold mb-4">Radar Information</h2>
-        <div id="radar-map" class="h-96"></div>
+      <section id="maps" class="bg-white p-6 rounded-lg shadow-md mb-6">
+        <h2 class="text-2xl font-semibold mb-4">Maps</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div id="map" class="h-96"></div>
+          <div id="radar-map" class="h-96"></div>
+        </div>
       </section>
     </main>
 
     <footer class="bg-blue-700 text-white text-center p-4">
-      <p>&copy; 2024 Lithuanian Hydrometeorological Service</p>
+      <p>&copy; 2024 AgneD Hydrometeorological Stuff</p>
     </footer>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>

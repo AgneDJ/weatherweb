@@ -4,7 +4,7 @@ body {
 }
 
 #map, #radar-map {
-    height: 500px;
+    height: 100%;
 }
 
 section {
@@ -13,4 +13,8 @@ section {
 
 section:hover {
     transform: scale(1.02);
+}
+
+header img {
+    max-height: 4rem;
 }
