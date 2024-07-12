@@ -4,47 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lithuanian Hydrometeorological Service</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   </head>
-  <body>
-    <header>
-      <h1>Lithuanian Hydrometeorological Service</h1>
+  <body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-700 text-white p-6">
+      <h1 class="text-3xl font-bold text-center">
+        Lithuanian Hydrometeorological Service
+      </h1>
     </header>
 
-    <main>
-      <section id="current-weather">
-        <h2>Current Weather</h2>
+    <main class="container mx-auto p-6">
+      <section
+        id="current-weather"
+        class="bg-white p-6 rounded-lg shadow-md mb-6"
+      >
+        <h2 class="text-2xl font-semibold mb-4">Current Weather</h2>
         <div id="current-weather-data"></div>
       </section>
 
-      <section id="forecast">
-        <h2>Weather Forecast</h2>
+      <section id="forecast" class="bg-white p-6 rounded-lg shadow-md mb-6">
+        <h2 class="text-2xl font-semibold mb-4">Weather Forecast</h2>
         <div id="forecast-data"></div>
       </section>
 
-      <section id="warnings">
-        <h2>Weather Warnings</h2>
+      <section id="warnings" class="bg-white p-6 rounded-lg shadow-md mb-6">
+        <h2 class="text-2xl font-semibold mb-4">Weather Warnings</h2>
         <div id="warnings-data"></div>
       </section>
 
-      <section id="historical-data">
-        <h2>Historical Data</h2>
+      <section
+        id="historical-data"
+        class="bg-white p-6 rounded-lg shadow-md mb-6"
+      >
+        <h2 class="text-2xl font-semibold mb-4">Historical Data</h2>
         <div id="historical-data-content"></div>
       </section>
 
-      <section id="synoptic-map">
-        <h2>Interactive Synoptic Map</h2>
-        <div id="map" style="height: 500px"></div>
+      <section id="synoptic-map" class="bg-white p-6 rounded-lg shadow-md mb-6">
+        <h2 class="text-2xl font-semibold mb-4">Interactive Synoptic Map</h2>
+        <div id="map" class="h-96"></div>
       </section>
 
-      <section id="radar-info">
-        <h2>Radar Information</h2>
-        <div id="radar-data"></div>
+      <section id="radar-info" class="bg-white p-6 rounded-lg shadow-md mb-6">
+        <h2 class="text-2xl font-semibold mb-4">Radar Information</h2>
+        <div id="radar-map" class="h-96"></div>
       </section>
     </main>
 
-    <footer>
+    <footer class="bg-blue-700 text-white text-center p-4">
       <p>&copy; 2024 Lithuanian Hydrometeorological Service</p>
     </footer>
 

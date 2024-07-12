@@ -1,44 +1,16 @@
+/* Additional custom styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    font-family: 'Inter', sans-serif;
 }
 
-header {
-    background: #0077b6;
-    color: white;
-    padding: 1em 0;
-    text-align: center;
-}
-
-main {
-    padding: 1em;
+#map, #radar-map {
+    height: 500px;
 }
 
 section {
-    background: white;
-    margin: 1em 0;
-    padding: 1em;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
 }
 
-h2 {
-    border-bottom: 2px solid #0077b6;
-    padding-bottom: 0.5em;
-}
-
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background: #0077b6;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-#map {
-    height: 500px;
+section:hover {
+    transform: scale(1.02);
 }
